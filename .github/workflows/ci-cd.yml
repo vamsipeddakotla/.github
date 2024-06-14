@@ -24,8 +24,8 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/wisecow:latest .
-        docker push ${{ secrets.DOCKER_USERNAME }}/wisecow:latest
+        docker build -t wisecow:latest .
+        docker push wisecow:latest
 
   deploy:
     runs-on: ubuntu-latest
